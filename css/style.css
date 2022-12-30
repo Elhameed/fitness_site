@@ -1,0 +1,302 @@
+:root{
+    --main-color: #ff9c6a;
+    --text-color: #fff;
+}
+
+* {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	text-transform: capitalize;
+}
+
+html {
+	overflow-x: hidden ;
+}
+
+/* header start */
+
+.header {
+	padding: 0.5rem 7%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0%;
+	background: #fff;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	z-index: 1000;
+}
+
+.header p, a #logo {
+	display: inline-block;
+	color: black;
+	font-size: 1.6rem;
+	padding-top: 10px;
+}
+
+#logo img {
+	float: left;
+	width: 50px;
+	height: 50px;
+}
+
+#logo span {
+	color: var(--main-color);
+}
+
+#logo2 {
+	display: none;
+}
+
+.navbar a{
+	color: black;
+	margin-left: 1.4rem;
+	font-size: 1rem;
+	position: relative;
+}
+
+.navbar a:hover {
+	color: var(--main-color);
+	transition: 0.4s;
+}
+
+.navbar a:after {
+	content: '';
+	position: absolute;
+	background: var(--main-color);
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 2px;
+	top: 100%;
+	margin-top: 5px;
+	transition: 1s;
+}
+
+.navbar a:hover:after {
+	width: 100%;
+}
+
+.icons div{
+	font-size: 1.6rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	cursor: pointer;
+}
+
+.icons div:hover {
+	color: var(--main-color);
+}
+
+#menu-bars {
+	display: none;
+}
+
+.btn {
+	margin-top: 2rem;
+	width: 150px;
+	padding: 12px;
+	color: var(--text-color);
+	background: var(--main-color);
+	font-size: 1.5rem;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.navbar .btn:hover {
+	background: rgba(0, 0, 0, 0.86);
+	color: var(--main-color);
+	transition: 1.4s;
+}
+
+.navbar.active {
+	left: 0;
+}
+
+.form-search {
+	width: 50%;
+	position: absolute;
+	top: 100%;
+	padding: 1.5rem;
+	right: -100%;
+}
+
+.form-search input {
+	width: 100%;
+	padding: 1.5rem;
+	outline: none;
+	border: 1px solid var(--main-color);
+	border-radius: 15px;
+}
+
+.form-search.active {
+	right: 2rem;
+}
+
+.background-image{
+    background: url("../images/hero-img.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 4%;
+}
+
+.background-content {
+	position: absolute;
+	top: 45%;
+	padding-left: 7%;
+
+}
+
+.background-content h2, p{
+	color: var(--text-color);
+}
+
+.background-content h2{
+	font-size: 48px;
+	text-shadow: 2px 2px black;
+}
+
+.background-content p{
+	font-size: 1.3rem;
+	margin-bottom: 30px;
+	text-shadow: 1px 2px black;
+}
+
+
+.background-content a{
+	padding: 0.8rem 1.6rem;
+	background: var(--main-color);
+	color: var(--text-color);
+	font-size: 1rem;
+	border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:767px) {
+
+	html{
+		font-size: 55%;
+	}
+
+	.header {
+		padding: 0.8rem;
+	}
+
+	.header p, a #logo {
+		font-size: 2.8rem;
+	}
+
+	#menu-bars {
+		display: initial;
+	}
+
+	#rec {
+		display: none;
+	}
+
+	.navbar {
+		position: absolute;
+		top: 0;
+		left: -100%;
+		background: var(--main-color);
+		width: 30rem;
+		height: 100vh;
+	}
+
+	.navbar a {
+		display: block;
+		font-size: 1.7rem;
+		margin: 1rem;
+		margin-bottom: 1.3rem;
+		padding: 1rem;
+		color: var(--text-color);
+	}
+
+	.navbar a:hover {
+		color: var(--text-color);
+	}
+
+	.icons div{
+	font-size: 2.2rem;
+	}
+
+	#logo2 {
+		display: block;
+	}
+
+	#logo2 {
+		font-size: 1.6rem;
+		color: black;
+		padding-top: 20px;
+	}
+	
+	#logo2 span{
+		color: white;
+	}
+
+	#logo2 img {
+		float: left;
+		height: 50px;
+		width: 50px;
+	}
+	
+	.background-content h2{
+	font-size: 48px;
+	text-shadow: 2px 2px black;
+	}
+
+	.background-content p{
+		font-size: 2rem;
+		margin-bottom: 25px;
+		text-shadow: 1px 2px black;
+	}
+
+
+	.background-content a{
+		padding: 0.8rem 1.6rem;
+		background: var(--main-color);
+		color: var(--text-color);
+		font-size: 2rem;
+		border-radius: 10px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
