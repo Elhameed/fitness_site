@@ -11,6 +11,7 @@
 	text-decoration: none;
 	box-sizing: border-box;
 	text-transform: capitalize;
+	transition: smooth;
 }
 
 html {
@@ -180,7 +181,7 @@ html {
 }
 
 .about-us-main {
-	padding: 3rem 7%;
+	padding: 5rem 7%;
 }
 
 .about-us-main h1{
@@ -201,35 +202,37 @@ html {
 }
 
 .about .row .content span{
-    font-size: 2.5rem;
-    color: var(--primary);
+    font-size: 28px;
+    color: var(--main-color);
 }
 
 .about .row .content h3{
-    font-size: 2.5rem;
-    color: var(--white);
-    padding: 1rem 0;
+    font-size: 24px;
+    color: black;
+    padding: 0;
+    font-style: italic;
 }
 
 .about .row .content p{
-    font-size: 1.4rem;
+    font-size: 18px;
     color: var(--white);
     padding: 1rem 0;
     line-height: 2;
 }
 
 .about .row .content ul li{
-    font-size: 1.7rem;
-    color: var(--white);
-    padding-top: 1.5rem;
+    font-size: 18px;
+    padding-top: 1rem;
+    list-style-type: none;
 }
 
 .about .row .content ul li i{
-    color: var(--primary);
-    padding-right: 1rem;
+    color: var(--main-color);
+    padding-right: .5rem;
 }
 
 .about .row .content .btn{
+	margin-top: 25px;
     margin: 3rem 0;
 }
 
