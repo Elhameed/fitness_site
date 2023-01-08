@@ -20,6 +20,10 @@ html {
 
 /* header start */
 
+section {
+	padding: 4.5rem 7%;
+}
+
 .header {
 	padding: 0.5rem 7%;
 	display: flex;
@@ -128,7 +132,7 @@ html {
 	right: -100%;
 }
 
-.form-search input {
+.form-search input{
 	width: 100%;
 	padding: 1.5rem;
 	outline: none;
@@ -178,10 +182,6 @@ html {
 	color: var(--text-color);
 	font-size: 1rem;
 	border-radius: 10px;
-}
-
-.about-us-main {
-	padding: 5rem 7%;
 }
 
 .about-us-main h1{
@@ -244,6 +244,89 @@ html {
     height: 100%;
 }
 
+.services-main h1{
+	color: var(--main-color);
+	font-size: 30px;
+	text-align: center;
+}
+
+.feature-slider {
+	padding-bottom: 4rem;
+}
+
+.feature-slider .wrapper {
+	display: flex;
+	gap: 2rem;
+}
+
+.feature-slider .box {
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	margin: 1rem 0;
+	width: 100%;
+}
+
+.feature-slider .box .image {
+	height: 25rem;
+	width: 100%;
+	overflow: hidden;
+}
+
+.feature-slider .box .image img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.feature-slider .box:hover .image img{
+	transform: scale(1.2);
+}
+
+.feature-slider .box .content {
+	padding: 1rem 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	align-items: center;
+}
+
+.feature-slider .box .content h3{
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: var(--text-color);
+	text-transform: uppercase;
+	background: rgba(0, 0, 0, 0.3);
+	padding: .2rem;
+	margin-top: .5rem;
+}
+
+.feature-slider .box .content .price {
+	width: 6rem;
+	height: 6rem;
+	line-height: 6rem;
+	border-radius: 50%;
+	text-align: center;
+	margin: auto;
+	background: var(--main-color);
+	font-size: 1.3rem;
+	font-weight: bolder;
+	color: var(--text-color);
+}
+
+.feature-slider .box:hover .content .price {
+	background: none;
+	border: .3rem solid #fff;
+	line-height: 5.5rem;
+}
+
+
+
+
+
+
+
 
 
 
@@ -263,6 +346,10 @@ html {
 
 	html{
 		font-size: 55%;
+	}
+
+	section {
+		padding: 7rem 7%;
 	}
 
 	.header {
@@ -346,14 +433,41 @@ html {
 		font-size: 1.8rem;
 		border-radius: 10px;
 	}
-	.about-us-main {
-		padding: 7rem 7%;
-	}
+
 	.about .row .content .btn{
     	font-size: 1.6rem;
 	}
 
+	.feature-slider .wrapper {
+		display: block;
+	}
 
+	.feature-slider .box .image {
+		height: 40rem;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.feature-slider .box .content h3{
+		font-size: 2.5rem;
+	}
+
+	.feature-slider .box .content .price {
+		width: 10rem;
+		height: 10rem;
+		line-height: 10rem;
+		border-radius: 50%;
+		text-align: center;
+		margin: auto;
+		background: var(--main-color);
+		font-size: 2rem;
+		font-weight: bolder;
+		color: var(--text-color);
+	}
+
+	.feature-slider .box:hover .content .price{
+		line-height: 9.5rem;
+	}
 
 
 
