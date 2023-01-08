@@ -321,6 +321,16 @@ section {
 	line-height: 5.5rem;
 }
 
+.schedule {
+	background: #eee;
+}
+
+.schedule .box-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+	padding-top: 2rem;
+	padding-bottom: 5rem;
+}
 
 
 
