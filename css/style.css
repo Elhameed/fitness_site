@@ -445,12 +445,18 @@ section {
 	height: 2px;
 }
 
+.contact-content form{
+	margin-left: 2rem;
+}
+
 .contact-content input{
 	width: 80%;
 	padding: 1rem;
 	margin: 1rem;
 	border: 1px solid var(--main-color);
 	background: black;
+	color: var(--text-color);
+	text-transform: none;
 }
 
 .contact-content textarea{
@@ -459,6 +465,16 @@ section {
 	margin: 1rem;
 	border: 1px solid var(--main-color);
 	background: black;
+	color: var(--text-color);
+}
+
+.contact-content .btn{
+	font-size: 18px;
+}
+
+.contact-content .btn:hover {
+	color: var(--main-color);
+	background: var(--text-color);
 }
 
 
