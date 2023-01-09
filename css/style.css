@@ -369,7 +369,7 @@ section {
 
 .schedule .box-container .box .icons span{
 	display: block;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	color: #333;
 	padding: .3rem 0;
 }
@@ -549,6 +549,30 @@ section {
 		display: block;
 	}
 
+	.schedule .box-container .box .content p{
+		color: #333;
+		font-size: 1.6rem;
+		line-height: 1.8;
+	}
+
+	.schedule .box-container .box .icons {
+	padding-bottom: 2rem;
+}
+
+	.schedule .box-container .box .icons span{
+		display: block;
+		font-size: 1.6rem;
+		color: #333;
+		padding: .3rem 0;
+	}
+
+	.schedule .box-container .box .btn{
+		margin: 1rem 2rem;
+		background: var(--main-color);
+		color: var(--text-color);
+		font-size: 1.6rem;
+		display: inline-block;
+	}
 
 
 
