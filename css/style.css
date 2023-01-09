@@ -477,6 +477,18 @@ section {
 	background: var(--text-color);
 }
 
+.footer{
+	margin-top: 1.5rem;
+	font-size: 1.3rem;
+	padding:1.5rem;
+	text-align: center;
+	color:#666;
+	background: #eee;
+}
+
+.footer span{
+    color:var(--main-color);
+}
 
 
 
@@ -658,12 +670,21 @@ section {
 	}
 
 	.main-contact {
-	padding-top: 5rem;
-}
+		padding-top: 5rem;
+	}
 
 	.main-inner-contact {
 		display: block;
 		padding-top: 2rem;
+	}
+
+	.footer{
+	    margin-top: 1.5rem;
+	    font-size: 1.7rem;
+	    padding:2rem;
+	    text-align: center;
+	    color:#666;
+	    background: #eee;
 	}
 
 
