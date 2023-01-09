@@ -244,6 +244,11 @@ section {
     height: 100%;
 }
 
+.services-main {
+	padding: 4.5rem 7% 0.5rem 7%;
+	background: #eee;
+}
+
 .services-main h1{
 	color: var(--main-color);
 	font-size: 30px;
@@ -321,18 +326,75 @@ section {
 	line-height: 5.5rem;
 }
 
-.schedule {
+.schedule{
+	padding: 0.5rem 7%;
 	background: #eee;
+}
+
+.schedule h1{
+	color: var(--main-color);
+	font-size: 30px;
 }
 
 .schedule .box-container {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+	grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
 	padding-top: 2rem;
 	padding-bottom: 5rem;
 }
 
+.schedule .box-container .box {
+	background:var(--text-color) ;
+}
 
+.schedule .box-container .box .content {
+	padding: 2rem 2rem 1rem 2rem;
+}
+
+.schedule .box-container .box .content h3{
+	font-size: 30px;
+	padding-bottom: .5rem;
+	color: var(--main-color);
+}
+
+.schedule .box-container .box .content p{
+	color: #333;
+	font-size: 1rem;
+	line-height: 1.8;
+}
+
+.schedule .box-container .box .icons {
+	padding: 0 2rem 1rem 2rem;
+}
+
+.schedule .box-container .box .icons span{
+	display: block;
+	font-size: 1.1rem;
+	color: #333;
+	padding: .3rem 0;
+}
+
+.schedule .box-container .box .icons span i{
+	margin-right: .5rem;
+}
+
+.schedule .box-container .box .btn{
+	margin: 3rem 2rem;
+	background: var(--main-color);
+	color: var(--text-color);
+	font-size: 1rem;
+}
+
+.schedule .box-container .box .btn:hover {
+	background: rgba(0, 0, 0, 0.86);
+	color: var(--main-color);
+}
+
+.schedule .box-container .box img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
 
 
 
@@ -448,6 +510,10 @@ section {
     	font-size: 1.6rem;
 	}
 
+	.services-main {
+		padding: 7rem 7%;
+	}
+
 	.feature-slider .wrapper {
 		display: block;
 	}
@@ -477,6 +543,10 @@ section {
 
 	.feature-slider .box:hover .content .price{
 		line-height: 9.5rem;
+	}
+
+	.schedule .box-container {
+		display: block;
 	}
 
 
