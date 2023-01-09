@@ -125,7 +125,7 @@ section {
 }
 
 .form-search {
-	width: 50%;
+	width: 40%;
 	position: absolute;
 	top: 100%;
 	padding: 1.5rem;
@@ -134,7 +134,7 @@ section {
 
 .form-search input{
 	width: 100%;
-	padding: 1.5rem;
+	padding: 1rem;
 	outline: none;
 	border: 1px solid var(--main-color);
 	border-radius: 15px;
@@ -504,6 +504,10 @@ section {
 		color: var(--text-color);
 		font-size: 1.8rem;
 		border-radius: 10px;
+	}
+
+	.form-search {
+		width: 50%;
 	}
 
 	.about .row .content .btn{
