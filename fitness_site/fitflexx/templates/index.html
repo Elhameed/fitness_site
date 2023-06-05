@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>fitflex - fitness center</title>
+
+    {% load static %} <!-- Load the static template tag -->
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- google fonts link-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+    <!-- css file link  -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+
+    <!-- header start -->
+    <header class="header">
+        <a href="" id="logo"><img src="{% static 'images/logo.png' %}"><p>fit<span>flex</span></p></a>
+
+        <nav class="navbar">
+
+            <a href="" id="logo2"><img src="{% static 'images/logo.png' %}"><p>fit<span>flex</span></p></a>
+
+            <a href="#">home</a>
+            <a href="#about">about</a>
+            <a href="#services">services</a>
+            <a href="#contact">contact</a>
+            <a href="" id="rec">|</a>
+            <a href="#" id="rec">Login</a>
+            <a href="" id="rec" class="btn">Sign Up</a>
+        </nav>
+
+        <div class="icons">
+            <div id="search-form" class="fas fa-search"></div>
+            <div id="menu-bars" class="fas fa-bars"></div>
+        </div>
+
+        <div class="form-search">
+            <input type="search" placeholder="search here">
+        </div>        
+
+    </header>
+    <!-- header end -->
+
+    <!-- background image start -->
+    <div class="background-image">
+    
+        <div class="background-content">
+           <h2>Welcome to fitflex</h2>
+           <p>The fitness facility for all your needs</p>
+        
+           <a href="#">get started</a>
+        </div>
+    </div>
+    <!-- background image end -->
+
+    <!-- about us start -->
+    <section class="about-us-main" id="about">
+        <h1>about us</h1>
+        <div class="about">
+            <br><br>
+
+        <div class="row">
+
+            <div class="content">
+                <span>why choose us</span>
+                <h3>push your limits forward</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, 
+                    soluta quia aspernatur ipsum, amet mollitia molestiae recusandae 
+                    ab distinctio blanditiis rem corrupti assumenda nesciunt ratione, 
+                    provident harum quidem non excepturi?</p>
+                <ul>
+                    <li> <i class="far fa-check-square"></i> how to support your immune system </li>
+                    <li> <i class="far fa-check-square"></i> a guide to 30 day fitness & workout challenges</li>
+                    <li> <i class="far fa-check-square"></i> guide to ease your back in the gym </li>
+                    <li style="padding-bottom: 7px;"> <i class="far fa-check-square"></i> the mental health benefits of exercise in home </li>
+                </ul> 
+                <br> 
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="image">
+                <img src="{% static 'images/about-img.jpg' %}" alt="">
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- about us end -->
+
+    <!-- Services starts -->
+    <section class="services-main" id="services">
+        <h1>featured classes</h1>
+
+        <div class="feature-slider">
+            <div class="wrapper">
+                <div class="box">
+                    <div class="image">
+                        <img src="{% static 'images/01.jpg' %}" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="price">$39.99</div>
+                        <h3>Beginner</h3>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="{% static 'images/02.jpg' %}" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="price">$39.99</div>
+                        <h3>Intermediate</h3>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="{% static 'images/03.jpg' %}" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="price">$39.99</div>
+                        <h3>Advanced</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services ends -->
+
+    <!-- Schedule section starts -->
+    <section class="schedule">
+        <h1>Our Schedule</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="content">
+                    <h3>Chest & abs</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="icons">
+                    <span><i class="fas fa-clock"></i> 5:30pm</span>
+                    <span><i class="fas fa-calendar"></i> January 1, 2023</span>
+                </div>
+                <a href="#" class="btn">Join form $15</a><br><br>
+            </div>
+            <div class="box">
+                <img src="{% static 'images/05.jpg' %}">
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <h3>Arm</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="icons">
+                    <span><i class="fas fa-clock"></i> 5:30pm</span>
+                    <span><i class="fas fa-calendar"></i> January 1, 2023</span>
+                </div>
+                <a href="#" class="btn">Join form $15</a>
+            </div>
+
+            <div class="box">
+                <img src="{% static 'images/06.png' %}">
+            </div>
+
+            <div class="box">
+                <img src="{% static 'images/07.jpg' %}">
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <h3>Leg</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="icons">
+                    <span><i class="fas fa-clock"></i> 5:30pm</span>
+                    <span><i class="fas fa-calendar"></i> January 1, 2023</span>
+                </div>
+                <a href="#" class="btn">Join form $15</a><br><br>
+            </div>
+
+            <div class="box">
+                <img src="{% static 'images/09.jpg' %}">
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <h3>Shoulder & Back</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="icons">
+                    <span><i class="fas fa-clock"></i> 5:30pm</span>
+                    <span><i class="fas fa-calendar"></i> January 1, 2023</span>
+                </div>
+                <a href="#" class="btn">Join form $15</a>
+            </div>
+        </div>
+    </section>
+    <!-- Schedule section starts -->
+
+    <!-- Contact starts -->
+    <section class="main-contact" id="contact">
+
+        <div class="main-inner-contact">
+            <div class="inner-contact">
+                <div class="contact-content">
+                    <h2><span>contact</span> us</h2>
+
+                    <form action="">
+                        <input type="email" placeholder="Enter Email" required>
+                        <input type="text" placeholder="Enter Name" required>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="your message" required></textarea>
+                        <input type="submit" class="btn" value="Send Message">
+                    </form>
+                    </div>
+                </div>
+            <div class="inner-contact">
+                <div class="contact-im">
+                    <img src="{% static 'images/10.jpeg' %}">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact ends -->
+
+    <!-- footer section starts -->
+    <footer class="footer"><i class="fas fa-regular fa-copyright"></i> Copyright <span><a href="https://www.linkedin.com/in/abdulhameed-ajani/" target="blank">Abdulhameed Ajani </a></span> | all rights reserved!
+    </footer>
+    <!-- footer section ends -->
+
+
+<script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
