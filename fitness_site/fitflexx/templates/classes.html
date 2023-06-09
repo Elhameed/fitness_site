@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>fitflex - fitness center</title>
+
+    {% load static %} <!-- Load the static template tag -->
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- google fonts link-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+    <!-- css file link  -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <style>
+        /* Styles for the classes section */
+        .classes {
+            background-color: #f7f7f7;
+            padding: 20px;
+        }
+
+        .classes h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        /* Styles for the class items */
+        .class-item {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .class-item h2 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .class-description {
+            color: #666;
+        }
+
+        .class-info {
+            color: #999;
+            margin-bottom: 5px;
+        }
+
+        .class-info span {
+            color: #333;
+            font-weight: bold;
+        }
+
+    </style>    
+
+</head>
+<body>
+
+    <!-- header start -->
+    <header class="header">
+        <a href="" id="logo"><img src="{% static 'images/logo.png' %}"><p>fit<span>flex</span></p></a>
+
+        <nav class="navbar">
+
+            <a href="" id="logo2"><img src="{% static 'images/logo.png' %}"><p>fit<span>flex</span></p></a>
+
+            <a href="#">home</a>
+            <a href="#about">about</a>
+            <a href="#services">services</a>
+            <a href="#contact">contact</a>
+            <a href="" id="rec">|</a>
+            <a href="#" id="rec">Login</a>
+            <a href="" id="rec" class="btn">Sign Up</a>
+        </nav>
+
+        <div class="icons">
+            <div id="search-form" class="fas fa-search"></div>
+            <div id="menu-bars" class="fas fa-bars"></div>
+        </div>
+
+        <div class="form-search">
+            <input type="search" placeholder="search here">
+        </div>        
+
+    </header>
+    <!-- header end -->
+
+    <!-- Add the following code to display the list of classes -->
+    <section class="classes">
+        <h1>Classes</h1>
+        <div class="class-list">
+            {% for class in classes %}
+            <div class="class-item">
+                <h2>{{ class.name }}</h2>
+                <p class="class-description">{{ class.description }}</p>
+                <p class="class-info">Instructor: <span>{{ class.instructor }}</span></p>
+                <p class="class-info">Schedule: <span>{{ class.schedule }}</span></p>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    
+    
+
+    <!-- footer section starts -->
+    <footer class="footer"><i class="fas fa-regular fa-copyright"></i> Copyright <span><a href="https://www.linkedin.com/in/abdulhameed-ajani/" target="blank">Abdulhameed Ajani </a></span> | all rights reserved!
+    </footer>
+    <!-- footer section ends -->
+
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
