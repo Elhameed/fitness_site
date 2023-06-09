@@ -17,52 +17,8 @@
     <!-- css file link  -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
-    <style>
-        /* Styles for the classes section */
-        .classes {
-            background-color: #f7f7f7;
-            padding: 20px;
-        }
-
-        .classes h1 {
-            font-size: 24px;
-            color: #333;
-        }
-
-        /* Styles for the class items */
-        .class-item {
-            background-color: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .class-item h2 {
-            font-size: 20px;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .class-description {
-            color: #666;
-        }
-
-        .class-info {
-            color: #999;
-            margin-bottom: 5px;
-        }
-
-        .class-info span {
-            color: #333;
-            font-weight: bold;
-        }
-
-    </style>    
-
 </head>
 <body>
-
     <!-- header start -->
     <header class="header">
         <a href="" id="logo"><img src="{% static 'images/logo.png' %}"><p>fit<span>flex</span></p></a>
@@ -92,23 +48,11 @@
     </header>
     <!-- header end -->
 
-    <!-- Add the following code to display the list of classes -->
-    <section class="classes">
-        <h1>Classes</h1>
-        <div class="class-list">
-            {% for class in classes %}
-            <div class="class-item">
-                <h2>{{ class.name }}</h2>
-                <p class="class-description">{{ class.description }}</p>
-                <p class="class-info">Instructor: <span>{{ class.instructor }}</span></p>
-                <p class="class-info">Schedule: <span>{{ class.schedule }}</span></p>
-                <a href="{% url 'book_class' class_id=class.id %}">Book Now</a>
-            </div>
-            {% endfor %}
-        </div>
-    </section>
-    
-    
+    <main>
+        {% block content %}
+        <!-- Content from child templates will be inserted here -->
+        {% endblock %}
+    </main>
 
     <!-- footer section starts -->
     <footer class="footer"><i class="fas fa-regular fa-copyright"></i> Copyright <span><a href="https://www.linkedin.com/in/abdulhameed-ajani/" target="blank">Abdulhameed Ajani </a></span> | all rights reserved!

@@ -21,5 +21,9 @@ from fitflexx import views
 urlpatterns = [
     path('', views.index, name='index'),
     path('classes/', views.classes, name='classes'),
+    path('register/', views.register, name='register'),
+    path('book_class/<int:class_id>/', views.book_class, name='book_class'),
+    path('notifications/', views.notifications, name='notifications'),
+    path('profile/', views.user_profile, name='profile'),
 ]
 
