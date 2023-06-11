@@ -3,7 +3,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login
-from django.contrib.auth.models import User
+from .models import Class
 
 
 def index(request):
@@ -16,24 +16,16 @@ def classes(request):
     # Pass the classes to the template
     return render(request, 'classes.html', {'classes': class_list})
 
-from django.shortcuts import render, redirect
-from django.contrib.auth.forms import UserCreationForm
-
 def register(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
         if form.is_valid():
             form.save()
-            print("Form submitted")  
             return redirect('login')  # Redirect to login page
-        else:
-            print("Form is not valid")  
-            print(form.errors)
     else:
         form = UserCreationForm()
     
     return render(request, 'register.html', {'form': form})
-
 
 def user_login(request):
     if request.method == 'POST':
@@ -64,6 +56,7 @@ def notifications(request):
     user_notifications = request.user.notifications.all()
     
     return render(request, 'notifications.html', {'notifications': user_notifications})
+
 
 @login_required
 def user_profile(request):
