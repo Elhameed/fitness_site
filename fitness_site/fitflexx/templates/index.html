@@ -26,15 +26,15 @@
 
         <nav class="navbar">
 
-            <a href="" id="logo2"><img src="{% static 'images/logo.png' %}"><p>fit<span>flex</span></p></a>
+            <a href="{% url 'index' %}" id="logo2"><img src="{% static 'images/logo.png' %}"><p>fit<span>flex</span></p></a>
 
-            <a href="#">home</a>
-            <a href="#about">about</a>
-            <a href="#services">services</a>
-            <a href="#contact">contact</a>
+            <a href="{% url 'index' %}">home</a>
+            <a href="{% url 'index' %}#about">about</a>
+            <a href="{% url 'index' %}#services">services</a>
+            <a href="{% url 'index' %}#contact">contact</a>
             <a href="" id="rec">|</a>
-            <a href="#" id="rec">Login</a>
-            <a href="" id="rec" class="btn">Sign Up</a>
+            <a href="{% url 'login' %}" id="rec">Login</a>
+            <a href="{% url 'register' %}" id="rec" class="btn">Sign Up</a>
         </nav>
 
         <div class="icons">

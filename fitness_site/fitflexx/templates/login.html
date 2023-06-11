@@ -76,6 +76,7 @@
             padding: 8px;
             border-radius: 5px;
             border: 1px solid gray;
+            text-transform: none;
         }
         button{
             border: none;
@@ -112,15 +113,15 @@
 
         <nav class="navbar">
 
-            <a href="" id="logo2"><img src="{% static 'images/logo.png' %}"><p>fit<span>flex</span></p></a>
+            <a href="{% url 'index' %}" id="logo2"><img src="{% static 'images/logo.png' %}"><p>fit<span>flex</span></p></a>
 
-            <a href="#">home</a>
-            <a href="#about">about</a>
-            <a href="#services">services</a>
-            <a href="#contact">contact</a>
+            <a href="{% url 'index' %}">home</a>
+            <a href="{% url 'index' %}#about">about</a>
+            <a href="{% url 'index' %}#services">services</a>
+            <a href="{% url 'index' %}#contact">contact</a>
             <a href="" id="rec">|</a>
-            <a href="#" id="rec">Login</a>
-            <a href="" id="rec" class="btn">Sign Up</a>
+            <a href="{% url 'login' %}" id="rec">Login</a>
+            <a href="{% url 'register' %}" id="rec" class="btn">Sign Up</a>
         </nav>
 
         <div class="icons">
@@ -138,18 +139,19 @@
     <section class="abinibi">
         <div class="container">
             <div class="login">
-                <form action="{% url 'login' %}" method="POST"> <!-- Specify the form action and method -->
-                    {% csrf_token %} <!-- Add the CSRF token for security -->
+                <form action="{% url 'login' %}" method="POST">
+                    {% csrf_token %}
                     <h1>Login</h1>
                     <hr>
                     <p>Explore the World!</p>
-                    <label for="email">Email</label>
-                    <input type="text" name="email" placeholder="abc@example.com"> <!-- Add name attribute to the input fields -->
+                    <label for="username">Username</label>
+                    {{ form.username }}
                     <label for="password">Password</label>
-                    <input type="password" name="password" placeholder="Enter your password!">
-                    <button type="submit">Submit</button> <!-- Change the button type to submit -->
+                    {{ form.password }}
+                    {{ form.errors }}
+                    <button type="submit">Submit</button>
                     <p>
-                        <a href="#">Forgot Password?</a>
+                        Don't have an account? <a href="{% url 'register' %}">Sign Up</a>
                     </p>
                 </form>
             </div>

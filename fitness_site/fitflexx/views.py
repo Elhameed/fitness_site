@@ -4,6 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login
 from django.contrib.auth.models import User
+from django.contrib import messages
 
 
 def index(request):
@@ -35,6 +36,8 @@ def register(request):
     return render(request, 'register.html', {'form': form})
 
 
+from django.contrib import messages
+
 def user_login(request):
     if request.method == 'POST':
         form = AuthenticationForm(request, data=request.POST)
@@ -43,9 +46,10 @@ def user_login(request):
             login(request, user)
             return redirect('index')
     else:
-        form = AuthenticationForm()
-    
+        form = AuthenticationForm(request, initial={'username': ''})  # Set initial username field value to empty string
+
     return render(request, 'login.html', {'form': form})
+
 
 def book_class(request, class_id):
     # Retrieve the selected class
