@@ -1,20 +1,170 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>fitflex - fitness center</title>
+
+    {% load static %} <!-- Load the static template tag -->
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- google fonts link-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+    <!-- css file link  -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <style>
+        
+        .abinibi{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 70px;
+        }
+        .container{
+            width: 100%;
+            display: flex;
+            max-width: 850px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .login{
+            width: 400px;
+        }
+        form{
+            width: 250px;
+            margin: 60px auto;
+        }
+        h1{
+            margin: 20px;
+            text-align: center;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+        
+        p{
+            text-align: center;
+            margin: 10px;
+        }
+        hr{
+            border-top: 2px solid tomato;
+        }
+        
+        .pic img{
+            width: 450px;
+            height: 100%;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        
+        form label{
+            display: block;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 5px;
+        }
+        input{
+            width: 100%;
+            margin: 2px;
+            border: none;
+            outline: none;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+        button{
+            border: none;
+            outline: none;
+            padding: 8px;
+            width: 252px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 5px;
+            background: tomato;
+        }
+        button:hover{
+            background: rgba(214, 86, 64, 1);
+        }
+        p{
+            margin: 20px;
+            color: black;
+        }
+        a{
+            color: var(--main-color);
+            text-decoration: none;
+        }
+        
+    </style>
+
 </head>
 <body>
-    <h2>Login</h2>
-    {% if error_message %}
-        <p><strong>{{ error_message }}</strong></p>
-    {% endif %}
-    <form method="post" action="{% url 'login' %}">
-        {% csrf_token %}
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username"><br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password"><br>
-        <input type="submit" value="Login">
-    </form>
+
+    <!-- header start -->
+    <header class="header">
+        <a href="" id="logo"><img src="{% static 'images/logo.png' %}"><p>fit<span>flex</span></p></a>
+
+        <nav class="navbar">
+
+            <a href="" id="logo2"><img src="{% static 'images/logo.png' %}"><p>fit<span>flex</span></p></a>
+
+            <a href="#">home</a>
+            <a href="#about">about</a>
+            <a href="#services">services</a>
+            <a href="#contact">contact</a>
+            <a href="" id="rec">|</a>
+            <a href="#" id="rec">Login</a>
+            <a href="" id="rec" class="btn">Sign Up</a>
+        </nav>
+
+        <div class="icons">
+            <div id="search-form" class="fas fa-search"></div>
+            <div id="menu-bars" class="fas fa-bars"></div>
+        </div>
+
+        <div class="form-search">
+            <input type="search" placeholder="search here">
+        </div>        
+
+    </header>
+    <!-- header end -->
+
+    <section class="abinibi">
+        <div class="container">
+            <div class="login">
+                <form action="{% url 'login' %}" method="POST"> <!-- Specify the form action and method -->
+                    {% csrf_token %} <!-- Add the CSRF token for security -->
+                    <h1>Login</h1>
+                    <hr>
+                    <p>Explore the World!</p>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" placeholder="abc@example.com"> <!-- Add name attribute to the input fields -->
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="Enter your password!">
+                    <button type="submit">Submit</button> <!-- Change the button type to submit -->
+                    <p>
+                        <a href="#">Forgot Password?</a>
+                    </p>
+                </form>
+            </div>
+            <div class="pic">
+                <img src="{% static 'images/about-img.png' %}">
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section starts -->
+    <footer class="footer"><i class="fas fa-regular fa-copyright"></i> Copyright <span><a href="https://www.linkedin.com/in/abdulhameed-ajani/" target="blank">Abdulhameed Ajani </a></span> | all rights reserved!
+    </footer>
+    <!-- footer section ends -->
+
+
+<script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
