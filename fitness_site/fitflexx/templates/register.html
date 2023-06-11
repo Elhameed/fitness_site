@@ -138,25 +138,57 @@
     <section class="abinibi">
         <div class="container">
             <div class="login">
-                <form action="{% url 'register' %}" method="POST"> <!-- Specify the form action and method -->
-                    {% csrf_token %} <!-- Add the CSRF token for security -->
+                <form action="{% url 'register' %}" method="POST"> 
+                    {% csrf_token %} 
                     <h1>Sign Up</h1>
                     <hr>
                     <p>Explore the World!</p>
                     <label for="name">Name</label>
-                    <input type="text" name="username" placeholder="Enter your name">
-
+                    <input type="text" name="username" placeholder="Enter your name" required>
+                    {% if form.username.errors %}
+                        <ul class="errorlist">
+                            {% for error in form.username.errors %}
+                                <li>{{ error }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                
                     <label for="email">Email</label>
-                    <input type="email" name="email" placeholder="abc@example.com">
-
-                    <label for="password">Password</label>
-                    <input type="password" name="password1" placeholder="Enter your password!">
-
+                    <input type="email" name="email" placeholder="abc@example.com" required>
+                    {% if form.email.errors %}
+                        <ul class="errorlist">
+                            {% for error in form.email.errors %}
+                                <li>{{ error }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                
+                    <label for="password1">Password</label>
+                    <input type="password" name="password1" placeholder="Enter your password!" required>
+                    {% if form.password1.errors %}
+                        <ul class="errorlist">
+                            {% for error in form.password1.errors %}
+                                <li>{{ error }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" name="password2" placeholder="Confirm your password" required>
+                    {% if form.password2.errors %}
+                        <ul class="errorlist">
+                            {% for error in form.password2.errors %}
+                                <li>{{ error }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                
                     <button type="submit">Submit</button>
                     <p>
-                        Have an account? <a href="#">Sign in</a>
+                        Have an account? <a href="{% url 'login' %}">Sign in</a>
                     </p>
                 </form>
+                
             </div>
             <div class="pic">
                 <img src="{% static 'images/about-img.png' %}">
