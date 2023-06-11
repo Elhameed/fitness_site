@@ -1,25 +1,12 @@
-from django.contrib.auth.models import AbstractUser
 from django.db import models
-
-class User(AbstractUser):
-    groups = models.ManyToManyField(
-        'auth.Group',
-        related_name='fitflexx_user_set',
-        related_query_name='user'
-    )
-    user_permissions = models.ManyToManyField(
-        'auth.Permission',
-        related_name='fitflexx_user_set',
-        related_query_name='user'
-    )
+from django.contrib.auth.models import User
 
 class UserProfile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile', related_query_name='user_profile')
-    # Add additional fields for the user's profile
-    # For example:
-    bio = models.TextField()
-    profile_image = models.ImageField(upload_to='profile_images/')
-    # ...
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    # Add your additional fields for the user profile
+
+    def __str__(self):
+        return self.user.username
 
 # Class Booking System
 class Class(models.Model):
