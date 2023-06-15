@@ -10,16 +10,6 @@ from django.contrib import messages
 def index(request):
     return render(request, 'index.html')
 
-def classes(request):
-    # Retrieve the list of classes from the database
-    class_list = Class.objects.all()
-    
-    # Pass the classes to the template
-    return render(request, 'classes.html', {'classes': class_list})
-
-from django.shortcuts import render, redirect
-from django.contrib.auth.forms import UserCreationForm
-
 def register(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
@@ -35,9 +25,6 @@ def register(request):
     
     return render(request, 'register.html', {'form': form})
 
-
-from django.contrib import messages
-
 def user_login(request):
     if request.method == 'POST':
         form = AuthenticationForm(request, data=request.POST)
@@ -51,27 +38,33 @@ def user_login(request):
     return render(request, 'login.html', {'form': form})
 
 
-def book_class(request, class_id):
-    # Retrieve the selected class
-    selected_class = Class.objects.get(id=class_id)
+# def classes(request):
+#     class_list = Class.objects.all()
     
-    # Perform validations or checks here
+#     # Pass the classes to the template
+#     return render(request, 'classes.html', {'classes': class_list})
+
+# def book_class(request, class_id):
+#     # Retrieve the selected class
+#     selected_class = Class.objects.get(id=class_id)
     
-    # Save the class booking details in the database
+#     # Perform validations or checks here
     
-    return redirect('success')  # Redirect to a success page or appropriate URL
+#     # Save the class booking details in the database
+    
+#     return redirect('success')  # Redirect to a success page or appropriate URL
 
 
-@login_required
-def notifications(request):
-    # Retrieve the logged-in user's notifications
-    user_notifications = request.user.notifications.all()
+# @login_required
+# def notifications(request):
+#     # Retrieve the logged-in user's notifications
+#     user_notifications = request.user.notifications.all()
     
-    return render(request, 'notifications.html', {'notifications': user_notifications})
+#     return render(request, 'notifications.html', {'notifications': user_notifications})
 
-@login_required
-def user_profile(request):
-    # Retrieve the logged-in user's profile details
-    user_profile = request.user.profile
+# @login_required
+# def user_profile(request):
+#     # Retrieve the logged-in user's profile details
+#     user_profile = request.user.profile
     
-    return render(request, 'profile.html', {'profile': user_profile})
+#     return render(request, 'profile.html', {'profile': user_profile})
