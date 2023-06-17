@@ -16,7 +16,7 @@
 
 <details open>
 <summary>
- Features
+ Key Features
 </summary> <br />
 
 <p>
