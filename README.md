@@ -25,7 +25,7 @@ The key Features include:
  Features
 </summary> <br />
 
-<p align="center">
+<p align="cent">
     User Registration and Login: Allows users to create an account, log in securely, and manage their profile information.
     <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/9908a54a-7d49-4dbb-8f5e-3e99b7cadf30.png" alt="apis"/>
 &nbsp;
