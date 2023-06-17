@@ -28,7 +28,7 @@
 
 <p>
     <b>Class Booking System</b>: Enables users to browse available classes, view class details, and book classes based on their preferences.
-    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/62c8d533-8475-4290-abc8-c433c095e68a.png" alt="plugins"/>
+    <img width="49%" src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/classes.PNG" alt="plugins"/>
 &nbsp;
     <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/9c67a354-a06f-47d1-a118-ab89b775bf91.png" alt="microservices"/>
 </p> 
