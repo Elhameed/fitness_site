@@ -20,24 +20,24 @@
 </summary> <br />
 
 <p>
-    <b>User Registration and Login</b>: Allows users to create an account, log in securely, and manage their profile information.
+    <b>- User Registration and Login</b>: Allows users to create an account, log in securely, and manage their profile information.
     <img width="49%" src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/signup.PNG" alt="signup"/>
 &nbsp;
     <img width="49%" src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/login.PNG" alt="login"/>
 </p>
 
 <p>
-    <b>Class Booking System</b>: Enables users to browse available classes, view class details, and book classes based on their preferences.
+    <b>- Class Booking System</b>: Enables users to browse available classes, view class details, and book classes based on their preferences.
     <img width="49%" src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/classes.PNG" alt="classes"/>
 &nbsp;
     <img width="49%" src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/booking.PNG" alt="booking"/>
 </p> 
     
 <p>
-    <b>Responsive Design</b>: The web application is designed to be responsive, providing optimal viewing across a wide range of devices.
-    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/a51e166b-07ec-4c80-99ed-8792a81c4064.png" alt="own-your-code"/>
+    <b>- Responsive Design</b>: The web application is designed to be responsive, providing optimal viewing across a wide range of devices.
+    <img width="49%" src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/resp2.PNG" alt="own-your-code"/>
 &nbsp;
-    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/1cca9721-b8d6-425b-a1a9-d10d3cdcc9b8.png" alt="customize-code"/>
+    <img width="49%" src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/resp.PNG" alt="customize-code"/>
 </p>
     
 </details>
