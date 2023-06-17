@@ -6,6 +6,10 @@
   <i align="center">FitFlex: Your Ultimate Fitness Companion</i>
 </p>
 
+<p align="center">
+    <img src="https://github.com/amplication/amplication/assets/73097785/c7ed2bbc-8954-46a1-a520-91a4711a9320.png" alt="dashboard"/>
+</p>
+
 # FitFlex: Gym Website
 ![Fitflex screenshot](portfolio4.PNG)
 
