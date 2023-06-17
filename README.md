@@ -30,7 +30,7 @@
     <b>Class Booking System</b>: Enables users to browse available classes, view class details, and book classes based on their preferences.
     <img width="49%" src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/classes.PNG" alt="classes"/>
 &nbsp;
-    <img width="49%" src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/book.PNG" alt="booking"/>
+    <img width="49%" src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/booking.PNG" alt="booking"/>
 </p> 
     
 <p>
