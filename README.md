@@ -41,3 +41,6 @@
 </p>
     
 </details>
+
+## Usage 
+Watch this short demo video to see how to use FitFlex: https://youtu.be/OXaKUP9EWEk
