@@ -43,7 +43,7 @@
 </details>
 
 ## Usage 
-Get a comprehensive overview of FitFlex's usage by watching our short demo video. Follow along as we showcase the various features and functionalities of the app, helping you navigate and make the most of your fitness journey. Access the demo video [here](https://youtu.be/OXaKUP9EWEk). 
+Watch this short demo video to see how to use the FitFlex app and its features. The video provides a step-by-step walkthrough of the registration process, login, class booking, and more. Access the demo video [here](https://youtu.be/OXaKUP9EWEk). 
 
 ## Contribution
 I welcome contributions from the community! If you find a bug 🐛 or have an idea for a new feature 💡, please open an issue or submit a pull request.
