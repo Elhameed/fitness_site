@@ -20,7 +20,7 @@
 </summary> <br />
 
 <p>
-    <b>1. User Registration and Login</b> Allows users to create account, log in securely
+    <b>1. User Registration and Login</b>: enables users to easily create and access secure accounts
     <img width="49%" src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/signup.PNG" alt="signup"/>
 &nbsp;
     <img width="49%" src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/login.PNG" alt="login"/>
