@@ -44,3 +44,6 @@
 
 ## Usage 
 Get a comprehensive overview of FitFlex's usage by watching our short demo video. Follow along as we showcase the various features and functionalities of the app, helping you navigate and make the most of your fitness journey. Access the demo video [here](https://youtu.be/OXaKUP9EWEk). 
+
+## Contribution
+I welcome contributions from the community! If you find a bug 🐛 or have an idea for a new feature 💡, please open an issue or submit a pull request.
