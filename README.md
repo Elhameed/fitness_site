@@ -1,3 +1,8 @@
+<h1 align="center">
+    <img src="./.github/assets/amplication-logo-light-mode.svg">
+</h1>
+
+
 # FitFlex: Gym Website
 ![Fitflex screenshot](portfolio4.PNG)
 
