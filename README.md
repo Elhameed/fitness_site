@@ -43,4 +43,4 @@
 </details>
 
 ## Usage 
-Watch this short demo video to see how to use FitFlex: https://youtu.be/OXaKUP9EWEk
+Get a comprehensive overview of FitFlex's usage by watching our short demo video. Follow along as we showcase the various features and functionalities of the app, helping you navigate and make the most of your fitness journey. Access the demo video [here](https://youtu.be/OXaKUP9EWEk). 
