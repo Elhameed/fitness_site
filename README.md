@@ -35,9 +35,9 @@
     
 <p>
     <b>- Responsive Design</b>: The web application is designed to be responsive, providing optimal viewing across a wide range of devices.
-    <img width="49%" src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/resp3.PNG" alt="own-your-code"/>
+    <img width="49%" src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/resp4.PNG" alt="own-your-code"/>
 &nbsp;
-    <img width="49%" src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/resp.PNG" alt="customize-code"/>
+    <img width="49%" src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/resp3.PNG" alt="customize-code"/>
 </p>
     
 </details>
