@@ -10,11 +10,10 @@
     <img src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/portfolio4.PNG" alt="dashboard"/>
 </p>
 
-# FitFlex: Gym Website
-![Fitflex screenshot](portfolio4.PNG)
+## Introduction
 
-Fitflex is a web application designed to streamline gym operations and enhance the user experience for both gym members and staff. It provides a comprehensive solution for user registration, login, and class booking. 
-
+`Fitflex` is a web application designed to streamline gym operations and enhance the user experience for both gym members and staff. It provides a comprehensive solution for user registration, login, and class booking. 
+ 
 The key Features include:
 - User Registration and Login: Allows users to create an account, log in securely, and manage their profile information.
 - Class Booking System: Enables users to browse available classes, view class details, and book classes based on their preferences.
