@@ -2,6 +2,9 @@
     <img src="./.github/assets/logo.PNG">
 </h1>
 
+<p align="center">
+  <i align="center">FitFlex: Your Ultimate Fitness Companion</i>
+</p>
 
 # FitFlex: Gym Website
 ![Fitflex screenshot](portfolio4.PNG)
