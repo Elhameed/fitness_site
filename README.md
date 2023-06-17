@@ -20,21 +20,21 @@
 </summary> <br />
 
 <p>
-    <b>- User Registration and Login</b>: Allows users to create an account, log in securely, and manage their profile information.
+    <b>1. User Registration and Login</b>
     <img width="49%" src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/signup.PNG" alt="signup"/>
 &nbsp;
     <img width="49%" src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/login.PNG" alt="login"/>
 </p>
 
 <p>
-    <b>- Class Booking System</b>: Enables users to browse available classes, view class details, and book classes based on their preferences.
+    <b>2. Class Booking System</b>
     <img width="49%" src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/classes.PNG" alt="classes"/>
 &nbsp;
     <img width="49%" src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/booking.PNG" alt="booking"/>
 </p> 
     
 <p>
-    <b>- Responsive Design</b>: The web application is designed to be responsive, providing optimal viewing across a wide range of devices.
+    <b>3. Responsive Design</b>
     <img width="49%" src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/responsiveness.PNG" alt="own-your-code"/>
 &nbsp;
     <img width="49%" src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/responsiveness2.PNG" alt="customize-code"/>
