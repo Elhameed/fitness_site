@@ -23,14 +23,14 @@
     <b>User Registration and Login</b>: Allows users to create an account, log in securely, and manage their profile information.
     <img width="49%" src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/signup.PNG" alt="signup"/>
 &nbsp;
-    <img width="49%" src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/login.PNG" alt="data-models"/>
+    <img width="49%" src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/login.PNG" alt="login"/>
 </p>
 
 <p>
     <b>Class Booking System</b>: Enables users to browse available classes, view class details, and book classes based on their preferences.
-    <img width="49%" src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/classes.PNG" alt="plugins"/>
+    <img width="49%" src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/classes.PNG" alt="classes"/>
 &nbsp;
-    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/9c67a354-a06f-47d1-a118-ab89b775bf91.png" alt="microservices"/>
+    <img width="49%" src="https://github.com/Elhameed/fitness_site/blob/main/.github/assets/book.PNG" alt="booking"/>
 </p> 
     
 <p>
