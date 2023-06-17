@@ -40,7 +40,7 @@ The key Features include:
 </p> 
     
 <p>
-    - Responsive Design: The web application is designed to be responsive, providing optimal viewing and interaction experiences across a wide range of devices.
+    - Responsive Design: The web application is designed to be responsive, providing optimal viewing across a wide range of devices.
     <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/a51e166b-07ec-4c80-99ed-8792a81c4064.png" alt="own-your-code"/>
 &nbsp;
     <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/1cca9721-b8d6-425b-a1a9-d10d3cdcc9b8.png" alt="customize-code"/>
