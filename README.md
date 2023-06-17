@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="./.github/assets/amplication-logo-light-mode.svg">
+    <img src="./.github/assets/logo.PNG">
 </h1>
 
 
